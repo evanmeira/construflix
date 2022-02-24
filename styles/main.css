@@ -17,6 +17,29 @@ body{
     color: white;
 }
 
+.index{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/construction-silhouette.jpg') !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.index main{
+    display: flex;    
+    align-items: center;
+    justify-content: center;    
+}
+
+.index .filme-principal{
+    display: flex;
+    align-items: center;
+    width: 840px;
+    line-height: 1.4;
+}
+
+.index h3{
+    width: 100%;
+}
+
 header .container{
     display: flex;
     /*flex-direction: row; valor padrão*/
@@ -72,6 +95,7 @@ header nav a:hover{
 .filme-principal .titulo{
     font-size: 40px;
 }
+
 .botoes{
     margin-top: 15px;
     margin-bottom: 40px;
@@ -99,6 +123,19 @@ header nav a:hover{
 
 .botao i{
     margin-right: 8px;
+}
+
+.botao-vamos{
+    font-size: 16px;
+    background-color: #e50914;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.botao-vamos:hover{
+    background-color: red;
+    color: white;
 }
 
 .doc-barragem-hoover{
