@@ -28,6 +28,7 @@ header .container{
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black', Times;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
 }
 
@@ -49,7 +50,7 @@ header nav a:hover{
 .filme-principal{
     font-size: 16px;
     height: 400px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
+    
     background-size: cover;
     display: flex;    
     flex-direction: column;
@@ -64,25 +65,33 @@ header nav a:hover{
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
+    color: #aaa;
+    line-height: 1.4;
 }
 
 .filme-principal .titulo{
     font-size: 40px;
 }
+.botoes{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
 
 .botao{
+    display: inline-block;
     background-color: rgba(0,0,0,.50);
     border: none;
     color: white;
     padding: 15px 30px;
-    margin-right: 15px;
-    margin-top: 15%;
+    margin-right: 15px;    
     font-size: 12px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
     
     cursor: pointer;
     transition: .3s ease all;
 }
+
 .botao:hover{
     background-color: white;
     color: black;
@@ -92,9 +101,93 @@ header nav a:hover{
     margin-right: 8px;
 }
 
+.doc-barragem-hoover{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/hoover-capa.jpg');
+}
+
+.doc-ponte-baluarte{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/Puente_Baluarte_03.jpg');
+}
+
+.doc-engenharia-antiguidade{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.doc-arranha-ceus{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/minato_tokyo_skyscrapers_buildings-1198279.jpg');
+}
+
+.doc-holanda-barreiras{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/Oosterscheldedam_storm_Rens_Jacobs.jpg');
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+.doc-ponte-akashi{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/akashi_kaikyo_9.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.doc-ilhas-dubai{
+    background: linear-gradient(to right, black,rgba(0,0,0,.50)100%), url('../img/161840-palm-islands-veja-como-as-ilhas-artificiais-de-dubai-foram-construidas.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Carousel de filmes */
+.carousel-filmes .item{
+    padding: 4px;
+}
+
 .box-filmes{
     height: 100%;
     width: 100%;
-    display: block;
+    display: block;    
+}
+
+.carousel-filmes .item:hover{
+    background-color: white;
+}
+
+.carousel-filmes .item:hover a{
+    background-color: white;
+    color: black;
+}
+
+.carousel-filmes a{    
+    text-decoration: none;
+    color: white;
+}
+.titulo-item-carosel{
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+footer{
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #aaa;
+}
+
+.about{
+    text-align: center;
+    margin-top: 30px;
+    line-height: 1.4;
+    color: #aaa;
+}
+
+.about h3{
+    color: white;
+}
+
+.about img{
+    border-radius: 50%;
+    border: #aaa solid 1px;
 }
